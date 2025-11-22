@@ -539,7 +539,12 @@ flake8 .
 ## ❓ FAQ
 
 **Q: How accurate are the matches?**
-A: The AI agent uses sophisticated reasoning about skills, interests, and experience levels. Match quality depends on profile completeness and the available participant pool.
+A: The AI agent uses Claude's reasoning capabilities to analyze multiple factors: skill complementarity, shared interests, experience balance, and role coverage. Match quality improves with:
+- More detailed profile information (skills, interests, preferences)
+- Larger participant database for better options
+- Specific matching requirements (what you're looking for)
+
+While we don't have formal accuracy metrics, the agentic approach allows the AI to explain its reasoning for each match, making it transparent why each person is recommended.
 
 **Q: Can I use this for non-hackathon team building?**
 A: Yes! The system works for any team formation scenario - projects, startups, study groups, etc.
@@ -554,7 +559,12 @@ A: Profiles are stored locally in Redis. For production use, implement authentic
 A: Yes! Modify the prompt in `agent_new.py` or add new tools to the agent for custom matching logic.
 
 **Q: What's the cost of running this?**
-A: Local development is free (except Anthropic API costs ~$0.01-0.05 per match). Cloud Run costs ~$5-20/month depending on usage.
+A: Cost breakdown:
+- **Local Development**: Free (only Anthropic API usage)
+- **Anthropic API**: Claude Sonnet 4 costs approximately $3 per million input tokens, $15 per million output tokens. A typical match uses ~2,000 tokens total (~$0.01-0.03 per match). See [Anthropic pricing](https://www.anthropic.com/pricing) for details.
+- **Redis**: Free locally. Cloud options: $0-15/month depending on provider (Upstash, Redis Cloud, etc.)
+- **Google Cloud Run**: Free tier includes 2M requests/month. Beyond that, costs ~$0.40 per million requests. Typical usage: $0-10/month.
+- **Total Estimated Monthly Cost**: $5-30 for moderate usage (100-1000 matches/month)
 
 ---
 
