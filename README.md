@@ -1,4 +1,4 @@
-# Hackathon Team Matching Agent
+# MEETMATCH - Hackathon Team Matching Agent
 
 An intelligent agentic search system that matches hackathon participants into optimal teams using Claude AI and Redis memory for persistent storage.
 
