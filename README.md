@@ -1,6 +1,6 @@
 # MEETMATCH - Hackathon Team Matching Agent
 
-An intelligent agentic search system that matches hackathon participants into optimal teams using Claude AI and Redis memory for persistent storage.
+Before you jump into a meeting or event, MeetMatch AI analyzes all participants, finds your top matches, explains why they matter, gives icebreakers, and learns from your feedback to improve.
 
 Demo: https://meetmatch-ai-527682779120.us-west1.run.app/
 
