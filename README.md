@@ -10,7 +10,7 @@ Demo: https://meetmatch-ai-527682779120.us-west1.run.app/
 🧠 **Redis Memory** - Persistent storage of user profiles and match history
 🔄 **Profile Management** - Create, update, and manage multiple personas
 📊 **Team Analysis** - Evaluates team compatibility and suggests balanced team structures
-🔗 **LinkedIn Integration** - Data sourced from Sanity with LinkedIn enrichment
+🔗 **LinkedIn Integration** - Data sourced from Sanity with LinkedIn enrichment using Agentic deep search
 
 ## Quick Start
 
